@@ -1,0 +1,131 @@
+@keyframes move{
+    0%{
+        left: 0;
+        top: 0px;
+        color:red;
+    }
+    25%{
+        left: 0px;
+        top: 200px;
+        color:rgb(38, 0, 255);
+        font-size: 30;
+    }
+    50%{
+        left: 200px;
+        top: 200px;
+        color:rgb(12, 238, 12);
+    }
+    75%{
+        left:200px;
+        top: 0px;
+        color:rgb(10, 236, 217);
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+    }
+}
+    @keyframes stair{
+        0%{
+            left: 0;
+            top: 0px;
+            color:red;
+        }
+        10%{
+            left: 50px;
+            top: 0px;
+            color:rgb(38, 0, 255);
+            font-size: 30;
+        }
+        20%{
+            left: 50px;
+            top: 50px;
+            color:rgb(12, 238, 12);
+        }
+        30%{
+            left:100px;
+            top: 50px;
+            color:rgb(10, 236, 217);
+        }
+        40%{
+            left: 100px;
+            top: 100px;
+        }
+        50%{
+            left:150px;
+            top: 100px;
+            color:rgb(10, 236, 217);
+        }
+        60%{
+            left: 150px;
+            top: 150px;
+        }
+        70%{
+            left: 200px;
+            top: 150px;
+        }
+        80%{
+            left:200px;
+            top: 200px;
+            color:rgb(10, 236, 217);
+        }
+        90%{
+            left: 250px;
+            top: 200px;
+        }
+        100%{
+            left: 250px;
+            top: 250px;
+        }
+}
+
+
+.anim{
+    width: 100px;
+    height: 100px;
+    position:relative;
+    animation-name: stair;
+    animation-duration: 10s;
+}
+.hoverme{
+    width:100px;
+    height:100px;
+    background-color: aqua;
+    transition:width 2s;
+    -webkit-transition: 2s,height 4s; 
+    border-radius: 50% 50% 50% 50%;
+
+}
+.hoverme:hover{
+    width: 300px;
+    height: 300px;
+
+}
+.hot{
+    width:100px;
+    height:100px;
+    background-color: blueviolet;
+    box-shadow: 3px 3px 5px blue;
+    color:yellow;
+    text-align: center;
+    transition-duration: 4s;
+    border-radius: 50% 50% 50% 50%;
+    line-height: 90px;
+}
+.hot:hover{
+    transform: rotate(180deg) 
+}
+.new{
+        width:100px;
+        height:100px;
+        background-color: blueviolet;
+        box-shadow: 3px 3px 5px blue;
+        color:yellow;
+        text-align: center;
+        transition-duration: 4s;
+        border-radius: 100%;
+        line-height: 90px;
+}
+.new:hover{
+    transform: rotate(180deg) 
+}
